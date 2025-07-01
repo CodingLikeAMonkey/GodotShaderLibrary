@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://drfox570tuqy3"]
+
+[ext_resource type="PackedScene" uid="uid://dxxirgbhp8tom" path="res://05_imports/blend_cube.glb" id="1_vgxuo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7fun7"]
+size = Vector3(2, 2, 2)
+
+[node name="BlendCube" type="RigidBody3D"]
+
+[node name="blend_cube" parent="." instance=ExtResource("1_vgxuo")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7fun7")
+disabled = true
