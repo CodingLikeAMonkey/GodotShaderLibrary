@@ -8,9 +8,9 @@ render_priority = 0
 shader = ExtResource("2_56fk4")
 shader_parameter/foreground_color = Color(0.34512, 0.48021, 0.706599, 1)
 shader_parameter/background_color = Color(0.313812, 0.551276, 0.351323, 1)
-shader_parameter/radius = 0.255
-shader_parameter/smoothness = 1.0
-shader_parameter/circle_position = Vector2(0.5, 0.624)
+shader_parameter/radius = 0.308
+shader_parameter/smoothness = 0.0001
+shader_parameter/tile_count = Vector2(20, 20)
 
 [node name="blend_cube" instance=ExtResource("1_ou3i5")]
 
