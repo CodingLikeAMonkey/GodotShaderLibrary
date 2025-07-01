@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2tcur3460imb"]
+
+[ext_resource type="Shader" uid="uid://cpgm8wnhcaqda" path="res://Shaders/circle.gdshader" id="1_sgvb7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hxwu8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pqvg1"]
+render_priority = 0
+shader = ExtResource("1_sgvb7")
+shader_parameter/foreground_color = Color(0.452333, 0.278804, 0.371367, 1)
+shader_parameter/background_color = Color(0.246786, 0.270665, 0.397653, 1)
+shader_parameter/radius = 1.0
+shader_parameter/smoothness = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_sgvb7"]
+
+[node name="RigidCube" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_hxwu8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_pqvg1")
+mesh = SubResource("BoxMesh_sgvb7")
