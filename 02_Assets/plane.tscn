@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://crnteyhnma2x6"]
 
-[ext_resource type="Shader" uid="uid://cpgm8wnhcaqda" path="res://Shaders/circle.gdshader" id="1_s46f0"]
+[ext_resource type="Shader" uid="uid://cpgm8wnhcaqda" path="res://04_Shaders/circle.gdshader" id="1_ob74b"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dpar4"]
 render_priority = 0
-shader = ExtResource("1_s46f0")
+shader = ExtResource("1_ob74b")
 shader_parameter/foreground_color = Color(0.477154, 0.713487, 0.569028, 1)
 shader_parameter/background_color = Color(0.65598, 0.336538, 0.437624, 1)
 shader_parameter/radius = 0.036

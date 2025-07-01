@@ -1,16 +1,16 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2tcur3460imb"]
 
-[ext_resource type="Shader" uid="uid://cpgm8wnhcaqda" path="res://Shaders/circle.gdshader" id="1_sgvb7"]
+[ext_resource type="Shader" uid="uid://cpgm8wnhcaqda" path="res://04_Shaders/circle.gdshader" id="1_sgvb7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hxwu8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pqvg1"]
 render_priority = 0
 shader = ExtResource("1_sgvb7")
-shader_parameter/foreground_color = Color(0.452333, 0.278804, 0.371367, 1)
-shader_parameter/background_color = Color(0.246786, 0.270665, 0.397653, 1)
-shader_parameter/radius = 1.0
-shader_parameter/smoothness = 1.0
+shader_parameter/foreground_color = Color(0.854263, 0.622364, 0.691869, 1)
+shader_parameter/background_color = Color(0.151146, 0.278133, 0.473784, 1)
+shader_parameter/radius = 0.325
+shader_parameter/smoothness = 0.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_sgvb7"]
 
